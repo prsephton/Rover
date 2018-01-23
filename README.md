@@ -86,6 +86,13 @@ cardinal directions, we can simply use NESW=[0,1,2,3] for addition being clockwi
 rotation and subtraction anti-clockwise.  We can use modulus 4 to ensure range is 
 always valid.
 	
+## Alternatives
+   An alternative approach to coding this would be to imagine the buggy as a finite state
+   machine, which is initialised with a grid size, position and direction.  Each movement
+   would alter the internal state by moving the buggy on the grid, or changing direction.
+   The FSM approach to this problem is appealing, but possibly more complex, and less
+   efficient.  It is also unnecessary to over complicate the problem.
+
 ## Usage:
    We expect the textual input on standard input, and will write the result to standard out,
 	as described in the specification.
