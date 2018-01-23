@@ -10,6 +10,7 @@ movement instructions.
 The task is to interpret the input, calculate the final position, and report it.
 
 The grid size is specified as an integer (S) consisting of two numerals.
+
 	width = S / 10     (Horizontal)
 	height = S mod 10  (Vertical)
 
@@ -19,6 +20,7 @@ illegal to move outside of the grid boundaries.
 We may assume that an invalid position or instruction is to be reported as an error.
 
 As per the given example, for the provided input:
+
 	88
 	12 E
 	MMLMRMMRRMML
