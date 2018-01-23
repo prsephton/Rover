@@ -93,6 +93,6 @@ always valid.
    
    You can run the tests by typing
    
-    python -m unittest -v tests.py
+    python -m unittest -v tests
      
    
