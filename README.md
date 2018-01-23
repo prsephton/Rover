@@ -13,8 +13,8 @@ The grid size is specified as an integer (S) consisting of two numerals.
 	width = S / 10     (Horizontal)
 	height = S mod 10  (Vertical)
 
-Although it is not stated in the instructions, we assume that it is illegal to move 
-outside of the grid boundaries.
+Although it is not explicitly stated in the instructions, we assume that it is 
+illegal to move outside of the grid boundaries.
 
 We may assume that an invalid position or instruction is to be reported as an error.
 
@@ -27,13 +27,19 @@ the reported final position should be 3 3 S
 
 ## Approach:
 
-At first glance, this requirement is trivial.  The naive solution is to build a software
+At first glance, thie requirements are trivial.  The *naive* solution is to build a software
 representation of the mars rover (as a class), and then place it (the rover object) and 
-move it around on the grid.  However, that is most probably an overkill, since all we 
-are required to produce is a final position and direction.
+move it around on the grid.  
+
+However, that is a complete overkill, since all we are required to produce is a final 
+position and direction.
 
 Nevertheless, we will encapsulate all the functionality of this app within a class, 
 simply because it is more readable than a flat procedural application.
+
+Since the specification is for a program which reads standard input and writes standard 
+output, we will test the application by providing various inputs and checking for the
+expected output.  Black box style.
 
 What we need to know are:
 
