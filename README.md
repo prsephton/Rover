@@ -29,12 +29,13 @@ the reported final position should be 3 3 S
 
 ## Approach:
 
-At first glance, thie requirements are trivial.  The *naive* solution is to build a software
-representation of the mars rover (as a class), and then place it (the rover object) and 
-move it around on the grid.  
+At first glance, thie requirements are trivial.  The **naive solution** is to build a 
+software representation of the mars rover (as a class), and then place it (the rover 
+object) on a grid class, and move the rover around on the grid.
 
 However, that is a complete overkill, since all we are required to produce is a final 
-position and direction.
+position and direction.  If we wanted an interactive GUI interface, perhaps the idea
+of a full "rover on a grid" model would have made sense.
 
 Nevertheless, we will encapsulate all the functionality of this app within a class, 
 simply because it is more readable than a flat procedural application.
@@ -97,4 +98,3 @@ always valid.
    
     python -m unittest -v tests
      
-   
