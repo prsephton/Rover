@@ -100,4 +100,4 @@ always valid.
      
 ## Other:
    Just for a bit of fun, the same algorithm described above was implemented in Prolog as
-   well.  You can read about it in the source of rover.pl.
+   well.  You can read about it in the source of *rover.pl*.
