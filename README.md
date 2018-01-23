@@ -29,7 +29,7 @@ the reported final position should be 3 3 S
 
 ## Approach:
 
-At first glance, thie requirements are trivial.  The **naive solution** is to build a 
+At first glance, the requirements are trivial.  The **naive solution** is to build a 
 software representation of the mars rover (as a class), and then place it (the rover 
 object) on a grid class, and move the rover around on the grid.
 
