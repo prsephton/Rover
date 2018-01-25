@@ -76,7 +76,7 @@ check_grid_pos(_, _, What) :-
 % Checks that the direction is in the valid set of directions, or fails
 check_direction(Direction) :- memberchk(Direction, ['N', 'E', 'S', 'W']), !.
 check_direction(Direction) :-
-	writef("%s is not a valid direction", [Direction]).
+	writef("%s is not a valid direction", [Direction]), nl, fail.
 
 % Reads the instruction list and checks that it is valid.
 get_instructions(IList) :-
